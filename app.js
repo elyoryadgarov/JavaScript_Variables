@@ -16,7 +16,7 @@ console.log(`${firstName} ${lastName} age is: ${age}`);
 let language="JavaScript";
 let createdYear=1995;
 let isCaseSensetive=true;
-console.log(`${language} is created ${createdYear} case sensetive? ${isCaseSensetive}`);
+console.log(`${language} is created ${createdYear} case sensetive? ${isCaseSensetive ? "Yes" : "No"}`);
 
 // Exercise 4
 let price = 19.99;
@@ -25,7 +25,8 @@ let salePercentage = 15;
 let stock = 0;
 let inStock = false;
 let selectedSize = "M";
-console.log(`Price: ${price} on sale now ${isOnSale} discount percentage ${salePercentage}, stock: ${stock}, is in stock? ${inStock}, selectid size: ${selectedSize}`);
+var age;
+console.log(`Price: ${price} on sale now ${isOnSale ? "Yes" : "No"} discount percentage ${salePercentage}, stock: ${stock}, is in stock? ${inStock ? "Yes" : "No"}, selectid size: ${selectedSize}`);
 
 // Exercise 5
 let title = "Name of the Wind";
@@ -33,4 +34,4 @@ let author = "Patrick Rothfuss";
 let pageCount = 722;
 let bookmark = 456;
 let hasRead = true;
-console.log(`Book name: ${title} author: ${author} how many page? ${pageCount}, where at now? ${bookmark}, is it readen ${hasRead}`);
+console.log(`Book name: ${title} author: ${author} how many page? ${pageCount}, where at now? ${bookmark}, is it read ${hasRead ? "Yes" : "No"}`);
